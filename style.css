@@ -36,6 +36,11 @@ ol > li {
   padding: 15px;
 }
 
+ol > li > p {
+  margin: 5px;
+  padding: 5px;
+}
+
 main > article > section > div > div > ul > li {
   vertical-align: middle;
   list-style: none;
