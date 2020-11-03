@@ -1,0 +1,394 @@
+body {
+  text-align: center;
+  background-color: rgb(255,215,0);
+  background-image: url("https://i.ibb.co/XVknPwF/codecode.jpg");
+  opacity: 0.98;
+}
+
+main {
+  padding: 15px;
+}
+
+main > article {
+  padding: 6px;
+  border: 2px dotted crimson;
+  background: lightblue;
+  background-clip: padding-box;
+}
+
+main > article > section {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+ol {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  list-style-position: initial;
+}
+
+ol > li {
+  margin: 5px;
+  padding: 10px;
+}
+
+main > article > section > div > div > ul > li {
+  vertical-align: middle;
+  list-style: none;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+article > header, article > section {
+  padding: 10px;
+  background-color: rgb(248, 160, 29);
+  text-align: center;
+}
+
+.hr {
+  height: auto;
+  box-sizing: border-box;
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  opacity: .98;
+  padding: 1.255em;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+.hr:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+}
+
+.hr:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-size: 24px;
+  font-style: italic;
+  color: #ffffff;
+}
+
+a:link {
+  text-decoration: none;
+  color: blue;
+}
+
+a:link h1, a:link h1 strong {
+  text-decoration: none;
+  color: blue;
+}
+
+
+a:link p, a:link p strong {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  color: cornflowerblue;
+}
+
+a:hover h1, a:hover h1 strong {
+  text-decoration: underline;
+  color: cornflowerblue;
+}
+
+a:hover p, a:hover p strong {
+  text-decoration: underline;
+  color: cornflowerblue;
+}
+
+a:hover img {
+  border: 5px dotted cornflowerblue;
+}
+
+a:active {
+  color: lightskyblue;
+}
+
+a:active h1, a:active h1 strong {
+  text-decoration: underline;
+  color: lightskyblue;
+}
+
+a:active p, a:active p strong {
+  text-decoration: underline;
+  color: lightskyblue;
+}
+
+a:active img {
+  border: 5px dotted lightskyblue;
+}
+
+a:visited {
+  text-decoration: none;
+  color: blue;
+}
+
+a:visited h1, a:visited h1 strong {
+  text-decoration: none;
+  color: blue;
+}
+
+a:visited p, a:visited p strong {
+  text-decoration: none;
+  color: blue;
+}
+
+ul {
+  text-align: justify;
+}
+
+h1, h2, h3, p {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+p {
+  font-size: 14px;
+}
+
+li + img {
+  width: 65%;
+  height: 50%;
+  padding: 2px;
+  margin: 2px;
+}
+
+li + p {
+  padding: 2px;
+  margin: 2px;
+}
+
+#map1,#map2 {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 400px;
+}
+
+
+@media only screen and (min-width: 200px){
+/* Set the size of the div element that contains the map */
+  #map1,#map2 {
+    height: 75px;
+    /* The height is 400 pixels */
+    width: 75px;
+    /* The width is the width of the web page */
+  }
+}
+
+@media only screen and (min-width: 250px){
+/* Set the size of the div element that contains the map */
+  #map1,#map2 {
+    height: 100px;
+    /* The height is 400 pixels */
+    width: 100x;
+    /* The width is the width of the web page */
+  }
+}
+
+@media only screen and (min-width: 300px){
+/* Set the size of the div element that contains the map */
+  #map1,#map2 {
+    height: 125px;
+    /* The height is 400 pixels */
+    width: 125px;
+    /* The width is the width of the web page */
+  }
+}
+
+@media only screen and (min-width: 350px){
+/* Set the size of the div element that contains the map */
+  #map1,#map2 {
+    height: 125px;
+    /* The height is 400 pixels */
+    width: 125px;
+    /* The width is the width of the web page */
+  }
+}
+
+@media only screen and (min-width: 400px){
+/* Set the size of the div element that contains the map */
+  #map1,#map2 {
+    height: 175px;
+    /* The height is 400 pixels */
+    width: 175px;
+    /* The width is the width of the web page */
+  }
+}
+
+@media only screen and (min-width: 450px){
+/* Set the size of the div element that contains the map */
+  #map1,#map2 {
+    height: 200px;
+    /* The height is 400 pixels */
+    width: 200px;
+    /* The width is the width of the web page */
+  }
+}
+
+@media only screen and (min-width: 550px){
+/* Set the size of the div element that contains the map */
+  #map1,#map2 {
+    height: 250px;
+    /* The height is 400 pixels */
+    width: 250px;
+    /* The width is the width of the web page */
+  }
+}
+
+@media only screen and (min-width: 700px){
+/* Set the size of the div element that contains the map */
+  #map1,#map2 {
+    height: 275x;
+    /* The height is 400 pixels */
+    width: 275px;
+    /* The width is the width of the web page */
+  }
+}
+
+@media only screen and (min-width: 900px){
+/* Set the size of the div element that contains the map */
+  #map1,#map2 {
+    height: 300px;
+    /* The height is 400 pixels */
+    width: 300px;
+    /* The width is the width of the web page */
+  }
+}
+
+@media only screen and (min-width: 1100px){
+/* Set the size of the div element that contains the map */
+  #map1,#map2 {
+    height: 350px;
+    /* The height is 400 pixels */
+    width: 350px;
+    /* The width is the width of the web page */
+  }
+}
+
+section.mapClass > div {
+  padding: 10px;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 600px){
+
+  section > div {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+    main > article > section > div > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main > article > section > div > div > ul {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main > article > section > div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+    main > article > section > div > div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+
+  main > article > section > div > div > ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 2px;
+  }
+
+  main > article > header > div  {
+    width: 100%;
+    text-align: center;
+  }
+
+  main > article > header > div > a > img  {
+    width: 60%;
+    padding: 5px;
+    margin: 2px;
+  }
+
+  main > article > header > div > a > h1  {
+    font-size: 24px;
+  }
+
+  li + img {
+    padding: 2px;
+    margin: 2px;
+  }
+
+  li + p {
+    padding: 2px;
+    margin: 2px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  main > article > section > div {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+    main > article > section > div > div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main > article > section > div > div > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  li + img {
+    padding: 2px;
+    margin: 2px;
+  }
+
+  li + p {
+    padding: 2px;
+    margin: 2px;
+  }
+}
