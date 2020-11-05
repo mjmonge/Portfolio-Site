@@ -9,8 +9,16 @@ body {
   background-color: rgb(255,215,0);
   background-image: url("https://i.ibb.co/XVknPwF/codecode.jpg");
   opacity: 0.98;
-  padding: 5px;
-  margin: 5px;
+  padding: 2px;
+  margin: 2px;
+}
+
+div > p, section > p {
+  font-weight: inherit;
+}
+
+strong {
+  font-weight: bolder;
 }
 
 /*
@@ -20,8 +28,8 @@ body > main > div > nav {
   display: flex;
   justify-content: space-evenly;
   background-color: #0B1C51;
-  padding: 5px;
-  margin: 5px;
+  padding: 0px;
+  margin: 2px;
 }
 
 /*
@@ -93,14 +101,15 @@ body > main > div > nav >  a:active {
     padding to the main elements 
 */
 main {
-  padding: 5px;
+  padding: 2px;
+  margin: 2px;
 }
 
 /* 
     padding to the main elements 
 */
 section > div, header > div {
-  padding: 5px;
+  padding: px;
 }
 
 
@@ -110,11 +119,10 @@ section > div, header > div {
 */
 main > article {
   text-align: center;
-  padding: 6px;
-  margin: 2px;
-  border: 2px dotted crimson;
+  border: 4px dotted crimson;
   background: lightblue;
   background-clip: padding-box;
+  padding: 4px;
 }
 
 
@@ -128,7 +136,7 @@ main > article > section, main > article > header {
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
-  padding: 6px;
+  padding: 4px;
 }
 
 /*  
@@ -142,9 +150,16 @@ ol {
   align-items: stretch;
   justify-content: center;
   list-style-position: initial;
-  padding: 5px;
+  padding: 10px;
   margin: 5px;
   width: 100%
+}
+
+
+ul > li {
+  padding: 10px;
+  margin: 5px;
+  list-style: none;
 }
 
 /*
@@ -154,9 +169,9 @@ ol {
 */
 main > article > section > div > div > ul > li {
   vertical-align: middle;
-  list-style: none;
+
   text-align: center;
-  padding: 5px;
+  padding: 10px;
   margin: 5px;
 }
 
@@ -184,7 +199,7 @@ article > header, article > section, article > footer {
   text-align: center;
   opacity: .98;
   padding: 15px;
-  background: linear-gradient(0.25turn, #3f87a6, #8df578, #f69d3c);
+  background: linear-gradient(0.46turn, #3f87a6, #2fce0f, #f69d3c);
 }
 
 /*
@@ -338,15 +353,20 @@ form input {
   text-align: center;
 }
 
+form div {
+  margin: 0 auto;
+  padding-bottom:15px;
+}
+
 /*
     Media Queries to resize the Google Maps according to device width
 */
 @media only screen and (min-width: 200px){
   /* Set the size of the div element that contains the map */
   #map1,#map2 {
-    height: 75px;
+    height: 90px;
     /* The height is 75 pixels */
-    width: 75px;
+    width: 90px;
     /* The width is 75 pixels */
   }
 }
@@ -358,9 +378,9 @@ form input {
 @media only screen and (min-width: 250px){
 /* Set the size of the div element that contains the map */
   #map1,#map2 {
-    height: 100px;
+    height: 115px;
     /* The height is 100 pixels */
-    width: 100x;
+    width: 115x;
     /* The width is 100 pixels */
   }
 }
@@ -371,9 +391,9 @@ form input {
 @media only screen and (min-width: 300px){
 /* Set the size of the div element that contains the map */
   #map1,#map2 {
-    height: 125px;
+    height: 140px;
     /* The height is 125 pixels */
-    width: 125px;
+    width: 140px;
     /* The width is 125 pixels */
   }
 }
@@ -384,9 +404,9 @@ form input {
 @media only screen and (min-width: 350px){
 /* Set the size of the div element that contains the map */
   #map1,#map2 {
-    height: 150px;
+    height: 165px;
     /* The height is 150 pixels */
-    width: 150px;
+    width: 165px;
     /* The width is 150 pixels */
   }
 }
@@ -397,9 +417,9 @@ form input {
 @media only screen and (min-width: 400px){
 /* Set the size of the div element that contains the map */
   #map1,#map2 {
-    height: 175px;
+    height: 190px;
     /* The height is 175 pixels */
-    width: 175px;
+    width: 190px;
     /* The width is 175 pixels */
   }
 }
@@ -410,9 +430,9 @@ form input {
 @media only screen and (min-width: 450px){
 /* Set the size of the div element that contains the map */
   #map1,#map2 {
-    height: 200px;
+    height: 215px;
     /* The height is 400 pixels */
-    width: 200px;
+    width: 215px;
     /* The width is the width of the web page */
   }
 }
@@ -423,9 +443,9 @@ form input {
 @media only screen and (min-width: 550px){
 /* Set the size of the div element that contains the map */
   #map1,#map2 {
-    height: 250px;
+    height: 265px;
     /* The height is 400 pixels */
-    width: 250px;
+    width: 265px;
     /* The width is the width of the web page */
   }
 }
@@ -436,9 +456,9 @@ form input {
 @media only screen and (min-width: 700px){
 /* Set the size of the div element that contains the map */
   #map1,#map2 {
-    height: 275x;
+    height: 290x;
     /* The height is 400 pixels */
-    width: 275px;
+    width: 290px;
     /* The width is the width of the web page */
   }
 }
@@ -449,11 +469,11 @@ form input {
 @media only screen and (min-width: 900px){
 /* Set the size of the div element that contains the map */
   #map1,#map2 {
-    height: 300px;
+    height: 315px;
     /* The height is 400 pixels */
-    width: 300px;
+    width: 315px;
     /* The width is the width of the web page */
-  }
+  
 }
 
 /*
@@ -462,9 +482,9 @@ form input {
 @media only screen and (min-width: 1100px){
 /* Set the size of the div element that contains the map */
   #map1,#map2 {
-    height: 350px;
+    height: 365px;
     /* The height is 400 pixels */
-    width: 350px;
+    width: 365px;
     /* The width is the width of the web page */
   }
 }
@@ -473,30 +493,25 @@ form input {
     Media Queries to restructure key site aspects
     optimized for desktop
 */
-@media only screen and (max-width: 600px) {
-  section > div {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-  }
+@media all and (min-width: 600px) and (max-width: 4400px) {
 
-    main > article > section > div > div {
+  main > article > section > div > div {
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
   }
 
   main > article > section > div > div > ul {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
   }
 
   main > article > section > div {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
   }
@@ -524,7 +539,6 @@ form input {
   }
 
   main > article > header > div > a > img  {
-    width: 60%;
     padding: 5px;
     margin: 2px;
   }
@@ -549,14 +563,7 @@ form input {
     Media Queries to restructure key site aspects
     optimized for mobile
 */
-@media only screen and (min-width: 600px) {
-  main > article > section > div {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-  }
-
+@media all and (min-width: 200px) and (max-width: 600px) {
     main > article > section > div > div {
     display: flex;
     flex-flow: row wrap;
@@ -566,8 +573,14 @@ form input {
 
   main > article > section > div > div > ul {
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
+  }
+
+  main > article > header > div > a > img  {
+    padding: 5px;
+    margin: 2px;
   }
 
   li + img {
@@ -584,10 +597,10 @@ form input {
 /*
     Media Queries to restructure nav for mobile
 */
-@media all and (min-width: 600px) {
+@media all and (min-width: 200px) and (max-width: 600px) {
   header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 30px;
   }
 
@@ -613,7 +626,7 @@ form input {
     --- 
 */
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 600px) {
   section {
     padding: 0 10%;
   }

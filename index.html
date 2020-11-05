@@ -4,10 +4,10 @@
 <html lang="en">
   <head>
   <!-- Meta Tag Declaring Character Set -->
-  <meta charset="utf-8">
+=  <meta charset="utf-8">
   <!-- Meta Tag Declaring Viewport as Device-Width and Initial Scale to 1 -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- In-House Local Javascript File to render Google Map -->
+  <!-- In-House Local Javascript File to render Google Map -->
   <script src="script.js"></script>
   <!-- Google Maps API Script -->
   <!-- 
@@ -18,6 +18,7 @@
   <!--  Normalize CSS sheet to improve cross web 
         platform CSS styling -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <!-- Global site tag (gtag.js) - Used for Google Analytics -->
   <!-- 
 	  Note this includes my personal measurement ID that is restricted, you must obtain your own to have Google Analytics for your site 
@@ -31,9 +32,17 @@
 
     gtag('config', 'G-FJ2C3YRH01');
   </script>
-  <title>Matt's Portfolio</title>
+  <script>
+    var onloadCallback = function() {
+      console.log("grecaptcha is ready!");
+    };
+  </script>
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+    async defer>
+</script>
+	<title>Matt's Portfolio</title>
   <!-- In-House Local CSS styling sheet -->
-  <link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
   <!-- Favicon Link -->
   <link rel="shortcut icon" type="image/png" href="https://i.ibb.co/9VZvn4x/Matthews-Headshot-Icon.png"/>
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
@@ -63,7 +72,7 @@
             </a>
             <p>Hi, this is Matt from Thinkful.</p>
             <a href = "https://www.linkedin.com/in/matthew-j-monge/" target = "_blank"><h1><strong>Matt Monge</strong></h1></a>
-            <img src="https://i.ibb.co/7pMQwP8/download.png" alt="Evans Scholar" style="width: 50%;">
+            <img src="https://i.ibb.co/7pMQwP8/download.png" alt="Evans Scholar">
             <p>Evans Scholar</p>
           </div>
         </header>
@@ -77,20 +86,18 @@
           <div>
             <p>I'm a computer engineer who's extremely passionate about technology and  working with technology. I love to program, write code, design circuits, prototype, and design websites. I am an Evans Scholar attending Marquette University. Aside from technology, I also have a career in real estate, and I am in the process of acquiring my real estate brokerage license in Illinois. I enjoy working with people and helping them however I can with tutoring, coding/technology assistance, or assisting them with their real estate needs. I have been a real estate marketer for 3 years now and I have been a programmer since the 8th grade. I graduate with my Bachelor of Engineering in Spring 2022 for Computer Engineering and I am looking forward to my career as a Full Stack Developer and Real Estate Broker.</p>
           </div>
-          <div class="mapClass">
-            <p>I am located in the Chicago metropolitan area to assist those with real estate questions or needs.</p>
-            <ol>
-              <li>
-                <div id="map1" style="margin: 0 auto;"></div>
-                <p>Chicago, IL</p>
+          <p>I am located in the Chicago metropolitan area to assist those with real estate questions or needs.</p>
+          <div class="mapClass" style="display:flex;">
+            <ul style="display:flex;">
+              <li style="display:flex; list-style: none;">
+                <div id="map1" style="padding:20px;"></div>
               </li>
-              <li>
-                <div id="map2" style="margin: 0 auto;"></div>
-                <p>Milwaukee, WI</p>
+              <li style="display:flex; list-style: none;">
+                <div id="map2" style="padding:20px;"></div>
               </li>
-            </ol>
-            <p>I am located in Milwaukee for my educational pursuits.</p>
+            </ul>
           </div>
+          <p>I am located in Milwaukee for my educational pursuits.</p>
         </section>
 
         <hr class = "hr" data-content = "MU '22, Evans Scholar '22, Illinois State Scholar, AP Scholar, Bilinqual">
@@ -131,83 +138,81 @@
         <section>
           <h2>Academic Institutions:</h2>
           <div>
-            <div>
-              <ul>
-                <li>
-                  <a href="https://bulletin.marquette.edu/undergrad/collegeofengineering/"  target = "_blank"><img src="https://i.ibb.co/RvFBF8f/ml-engineering-bg.png" alt="ml-engineering-bg" height="100"></a>
+            <ul style="display: flex; flex-flow: column wrap; padding: 0px;">
+              <li>
+                <a href="https://bulletin.marquette.edu/undergrad/collegeofengineering/"  target = "_blank"><img src="https://i.ibb.co/RvFBF8f/ml-engineering-bg.png" alt="ml-engineering-bg" height="100"></a>
+              </li>
+              <li>
+                <p>Marquette University, Milwaukee, WI</p>
+                <a href="https://bulletin.marquette.edu/undergrad/collegeofengineering/departmentofelectricalandcomputerengineering/#major__computer_engineeringtext"  target = "_blank"><p><strong>Bachelor of Engineering</strong> in <strong>Computer Engineering</strong></p></a>
+                <a href="https://wgacaddieacademy.org/the-evans-scholarship" target="_blank"><p>Evans Scholar, Evans Scholar Foundation</p></a>
+                <p>Spring 2022 Graduation</p>
+                <p>Focus on Intelligent Systems</p>
+                <p>Dean's List Fall 2017, Spring 2018, and Fall 2018</p>
+                <p>Freshman Engineering Competition, 3rd Place Both Semesters</p>
+              </li>
+            </ul>
+            <ul style="display: flex; flex-flow: column wrap; padding: 0px;">
+              <li>
+                <a href="https://www.instituteonline.com/" target="_blank"><img src="https://i.ibb.co/mb207XT/real-estate-institute.png" alt="real-estate-institute" height="100"></a>
                 </li>
-                <li>
-                  <p>Marquette University, Milwaukee, WI</p>
-                  <a href="https://bulletin.marquette.edu/undergrad/collegeofengineering/departmentofelectricalandcomputerengineering/#major__computer_engineeringtext"  target = "_blank"><p><strong>Bachelor of Engineering</strong> in <strong>Computer Engineering</strong></p></a>
-                  <a href="https://wgacaddieacademy.org/the-evans-scholarship" target="_blank"><p>Evans Scholar, Evans Scholar Foundation</p></a>
-                  <p>Spring 2022 Graduation</p>
-                  <p>Focus on Intelligent Systems</p>
-                  <p>Dean's List Fall 2017, Spring 2018, and Fall 2018</p>
-                  <p>Freshman Engineering Competition, 3rd Place Both Semesters</p>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a href="https://www.instituteonline.com/" target="_blank"><img src="https://i.ibb.co/mb207XT/real-estate-institute.png" alt="real-estate-institute" height="100"></a>
-                </li>
-                <li>
-                  <p>Real Estate Institute, Niles, IL</p>
-                  <a href="https://www.instituteonline.com/real-estate/illinois-pre-license" target="_blank"><p>Pre-Brokerage Pre-Licensing Track</p></a>
-                  <p>Broker Personal Assistant & Marketing Specialist Pending License</p>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a href="https://www.thinkful.com/" target="_blank"><img src="https://i.ibb.co/GCRmCTp/thinkful-logo.png" alt="thinkful-logo" height="100"></a>
-                </li>
-                <li>
-                  <p>Thinkful, Professional Development Program</p>
-                  <p>Software Engineering Flex Program</p>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a  href="https://www.usnews.com/education/best-high-schools/illinois/districts/chicago-public-schools/northside-college-preparatory-high-school-6601" target="blank"><img src="https://i.ibb.co/zPLNdk5/Northside.jpg" alt="Northside Prep Logo" height="100"></a>
-                </li>
-                <li>
-                  <p>Northside College Preparatory High School Graduate, Chicago, IL</p>
-                  <p>Cross Country Runner</p>
-                  <a href="https://il.milesplit.com/meets/154637-chicago-public-league-championship-2013/results/271925/raw#.X5041YjARPZ"><p>2013 <strong>CPS City Championship</strong> Race 28th Place Citywide in Freshman Race, 12'31.8" 2-mile time</p></a>
-                  <p>Basketball Player & Freshman Team Co-Captain</p>
-                  <p>Chess Team</p>
-                  <a href="https://www.youtube.com/watch?v=Su1_e2Tbkis"><p><strong>FIRST</strong> Robotics Team Member - Lead Programmer/Robot Operator - Axiom 4787</p></a>
-                  <p>Beginning Band Member - Trumpet/Baritone Player</p>
-                  <p>Open Code Computer Science Extracurricular Club President and Student Coordinator</p>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a href="https://lanetech.org/ltac/" target="_blank"><img src="https://i.ibb.co/Qj8QCmh/ltac.png" alt="Lane Tech Academic Center (LTAC) Logo" height="100"></a>
-                </li>
-                <li>
-                  <p>Lane Tech High School Academic Center Graduate, Chicago, IL</p>
-                  <p>Cross Country, Basketball, and Volleyball Team Member<p>
-                  <p>LTAC Science Fair, 6th Place Overall</p>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a href="https://www.cps.edu/about/departments/magnet-gifted-and-ib-programs" target="_blank"><img src="https://i.ibb.co/LRZpYhB/BEAUBIEN-ELEM.jpg" alt="Beaubien Elementary Logo" height="100"></a>
-                </li>
-                <li>
-                  <a href="https://www.beaubienelementary.org/about-us/options-program/"><p>Beaubien Elementary, Chicago, IL</p></a>
-                  <p>Options Program Attendee</p>
-                  <a href="http://cjml.org/stats_1112.php" target="_blank"><p><strong>CJML</strong> Participant</p></a>
-                  <p>2011-12 7th Grade CJML Participant Cumalative Year-Round 11th Place</p>
-                  <p>High Pass on CPS Algebra Exit Exam in 7th Grade</p>
-                  <p>Advanced Band Member - Clarinet Player - Outstanding Achievement awarded to Band</p>
-                  <p>Intermediate Band Member - Clarinet Player
+              <li>
+                <p>Real Estate Institute, Niles, IL</p>
+                <a href="https://www.instituteonline.com/real-estate/illinois-pre-license" target="_blank"><p>Pre-Brokerage Pre-Licensing Track</p></a>
+                <p>Broker Personal Assistant & Marketing Specialist Pending License</p>
+              </li>
+            </ul>
+            <ul style="display: flex; flex-flow: column wrap; padding: 0px;">
+              <li>
+                <a href="https://www.thinkful.com/" target="_blank"><img src="https://i.ibb.co/GCRmCTp/thinkful-logo.png" alt="thinkful-logo" height="100"></a>
+              </li>
+              <li>
+                <p>Thinkful, Professional Development Program</p>
+                <p>Software Engineering Flex Program</p>
+              </li>
+            </ul>
+            <ul style="display: flex; flex-flow: column wrap; padding: 0px;">
+              <li>
+                <a  href="https://www.usnews.com/education/best-high-schools/illinois/districts/chicago-public-schools/northside-college-preparatory-high-school-6601" target="blank"><img src="https://i.ibb.co/zPLNdk5/Northside.jpg" alt="Northside Prep Logo" height="100"></a>
+              </li>
+              <li>
+                <p>Northside College Preparatory High School Graduate, Chicago, IL</p>
+                <p>Cross Country Runner</p>
+                <a href="https://il.milesplit.com/meets/154637-chicago-public-league-championship-2013/results/271925/raw#.X5041YjARPZ"><p>2013 <strong>CPS City Championship</strong> Race 28th Place Citywide in Freshman Race, 12'31.8" 2-mile time</p></a>
+                <p>Basketball Player & Freshman Team Co-Captain</p>
+                <p>Chess Team</p>
+                <a href="https://www.youtube.com/watch?v=Su1_e2Tbkis"><p><strong>FIRST</strong> Robotics Team Member - Lead Programmer/Robot Operator - Axiom 4787</p></a>
+                <p>Beginning Band Member - Trumpet/Baritone Player</p>
+                <p>Open Code Computer Science Extracurricular Club President and Student Coordinator</p>
+              </li>
+            </ul>
+            <ul style="display: flex; flex-flow: column wrap; padding: 0px;">
+              <li>
+                <a href="https://lanetech.org/ltac/" target="_blank"><img src="https://i.ibb.co/Qj8QCmh/ltac.png" alt="Lane Tech Academic Center (LTAC) Logo" height="100"></a>
+              </li>
+              <li>
+                <p>Lane Tech High School Academic Center Graduate, Chicago, IL</p>
+                <p>Cross Country, Basketball, and Volleyball Team Member<p>
+                <p>LTAC Science Fair, 6th Place Overall</p>
+              </li>
+            </ul>
+            <ul style="display: flex; flex-flow: column wrap; padding: 0px;">
+              <li>
+                <a href="https://www.cps.edu/about/departments/magnet-gifted-and-ib-programs" target="_blank"><img src="https://i.ibb.co/LRZpYhB/BEAUBIEN-ELEM.jpg" alt="Beaubien Elementary Logo" height="100"></a>
+              </li>
+              <li>
+                <a href="https://www.beaubienelementary.org/about-us/options-program/"><p>Beaubien Elementary, Chicago, IL</p></a>
+                <p>Options Program Attendee</p>
+                <a href="http://cjml.org/stats_1112.php" target="_blank"><p><strong>CJML</strong> Participant</p></a>
+                <p>2011-12 7th Grade CJML Participant Cumalative Year-Round 11th Place</p>
+                <p>High Pass on CPS Algebra Exit Exam in 7th Grade</p>
+                <p>Advanced Band Member - Clarinet Player - Outstanding Achievement awarded to Band</p>
+                <p>Intermediate Band Member - Clarinet Player
                     Excellent Achievement awarded to Band</p>
-                  <p>Basketball Extracurricular Player</p>
-                  <p>Latin Student for 5 years</p>
-                </li>
-              </ul>
-            </div>
+                <p>Basketball Extracurricular Player</p>
+                <p>Latin Student for 5 years</p>
+              </li>
+            </ul>
           </div>
         </section>
 
@@ -218,9 +223,13 @@
         <section id="contact">
           <h2>Contact:</h2>
           <div>
-            <a href = "https://www.linkedin.com/in/matthew-j-monge/" target = "_blank"><p>LinkedIn</p></a>
-            <a href = "https://github.com/mjmonge" target = "_blank"><p>GitHub</p></a>
-            <a href = "mailto:matthew.monge@marquette.edu" target = "_blank"><p>Email: matthew.monge@marquette.edu</p></a>
+            <a href = "https://www.linkedin.com/in/matthew-j-monge/" target="_blank"><p>LinkedIn</p></a>
+          </div>
+          <div>
+            <a href = "https://github.com/mjmonge" target="_blank"><p>GitHub</p></a>
+          </div>
+          <div>
+            <a href = "mailto:matthew.monge@marquette.edu" target="_blank"><p>Email: matthew.monge@marquette.edu</p></a>
           </div>
           <section>
             <h2>Contact Form</h2>
@@ -233,8 +242,10 @@
                   <input id="user-email" type="text" name="email">
                   <label for="phonenum">Phone #:</label>
                   <input id="phonenum" type="text" name="phone"
-                  pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="xxx-xxx-xxxx"/>
-                  <button type="submit">Submit</button>
+                      pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="xxx-xxx-xxxx"/>
+                  <div class="g-recaptcha"
+                      data-sitekey="6Lf3Lt8ZAAAAAOCxAgT6xjpo0DZWvypEYFFDr2J-"></div>
+                  <input type="submit" value="Submit">
                 </form>
               </div>
             </div>
@@ -258,4 +269,5 @@
       </article>
     </main>
   </body>
+
 </html>
