@@ -3,49 +3,49 @@
 <!-- HTML Container specifying English as the Language -->
 <html lang="en">
   <head>
-  <!-- Meta Tag Declaring Character Set -->
-=  <meta charset="utf-8">
-  <!-- Meta Tag Declaring Viewport as Device-Width and Initial Scale to 1 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- In-House Local Javascript File to render Google Map -->
-  <script src="script.js"></script>
-  <!-- Google Maps API Script -->
-  <!-- 
-    Note this includes my personal key that is restricted, you must obtain your own in order to run this code on your own
-  -->
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCigZ1agr2m35qnVaVcOcDNqV04By8391k"></script>
-  <!--  Normalize CSS sheet to improve cross web 
-        platform CSS styling -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <!-- Global site tag (gtag.js) - Used for Google Analytics -->
-  <!-- 
-	  Note this includes my personal measurement ID that is restricted, you must obtain your own to have Google Analytics for your site 
-  -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJ2C3YRH01"></script>
-  <!-- Global site tag (gtag.js) - continued -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+	<!-- Meta Tag Declaring Character Set -->
+	<meta charset="utf-8">
+	<!-- Meta Tag Declaring Viewport as Device-Width and Initial Scale to 1 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- In-House Local Javascript File to render Google Map -->
+	<script src="script.js"></script>
+	<!-- Google Maps API Script -->
+	<!-- 
+		Note this includes my personal key that is restricted, you must obtain your own in order to run this code on your own
+	-->
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCigZ1agr2m35qnVaVcOcDNqV04By8391k"></script>
+	<!--  Normalize CSS sheet to improve cross web 
+		  platform CSS styling -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<!-- Global site tag (gtag.js) - Used for Google Analytics -->
+	<!-- 
+		Note this includes my personal measurement ID that is restricted, you must obtain your own to have Google Analytics for your site 
+	-->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7D48507EE1"></script>
+	<!-- Global site tag (gtag.js) - continued -->
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-    gtag('config', 'G-FJ2C3YRH01');
-  </script>
-  <script>
-    var onloadCallback = function() {
-      console.log("grecaptcha is ready!");
-    };
-  </script>
-  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-    async defer>
-</script>
+		gtag('config', 'G-7D48507EE1');
+	</script>
+	<script>
+		var onloadCallback = function() {
+		console.log("grecaptcha is ready!");
+		};
+	</script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+		async defer>
+	</script>
 	<title>Matt's Portfolio</title>
-  <!-- In-House Local CSS styling sheet -->
+	<!-- In-House Local CSS styling sheet -->
 	<link href="style.css" rel="stylesheet" type="text/css" />
-  <!-- Favicon Link -->
-  <link rel="shortcut icon" type="image/png" href="https://i.ibb.co/9VZvn4x/Matthews-Headshot-Icon.png"/>
-  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<!-- Favicon Link -->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link rel="shortcut icon" type="image/png" href="https://i.ibb.co/9VZvn4x/Matthews-Headshot-Icon.png"/>
   </head>
 
   <!-- VERY IMPORTANT, on page load, initialize Google Maps -->
