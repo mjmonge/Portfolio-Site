@@ -16,8 +16,9 @@
 	<script
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCigZ1agr2m35qnVaVcOcDNqV04By8391k"></script>
 	<!--  Normalize CSS sheet to improve cross web 
-		  platform CSS styling -->
+        platform CSS styling -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+	<!-- Google Recaptcha API Script -->
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<!-- Global site tag (gtag.js) - Used for Google Analytics -->
 	<!-- 
@@ -32,19 +33,22 @@
 
 		gtag('config', 'G-7D48507EE1');
 	</script>
+	<!-- HTML HEADER Script to load Recaptcha-->
 	<script>
 		var onloadCallback = function() {
-		console.log("grecaptcha is ready!");
+		console.log("recaptcha is ready!");
 		};
 	</script>
+	<!-- Recaptcha API Call -->
 	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
 		async defer>
 	</script>
 	<title>Matt's Portfolio</title>
 	<!-- In-House Local CSS styling sheet -->
 	<link href="style.css" rel="stylesheet" type="text/css" />
-	<!-- Favicon Link -->
+	<!-- Google Font Styling Link -->
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<!-- Favicon Link -->
 	<link rel="shortcut icon" type="image/png" href="https://i.ibb.co/9VZvn4x/Matthews-Headshot-Icon.png"/>
   </head>
 
@@ -243,7 +247,12 @@
                   <label for="phonenum">Phone #:</label>
                   <input id="phonenum" type="text" name="phone"
                       pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="xxx-xxx-xxxx"/>
-                  <div class="g-recaptcha"
+                  <!--
+                    Google Recaptcha Div With
+                    Restricted Public Site key
+                    NOTE: Must create own
+                  -->
+				  <div class="g-recaptcha"
                       data-sitekey="6Lf3Lt8ZAAAAAOCxAgT6xjpo0DZWvypEYFFDr2J-"></div>
                   <input type="submit" value="Submit">
                 </form>
