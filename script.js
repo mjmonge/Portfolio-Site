@@ -1,28 +1,29 @@
+// Method to populate content in the Google Map Divs
 function initMap() {
-  // The location of Uluru
-  const uluru1 = { lat: 41.896, lng: -87.665 };
-  // The map, centered at Uluru
-  const map1 = new google.maps.Map(document.getElementById("map1"), {
+  // The location of West Town in Chicago
+  const chicagoWestTown = { lat: 41.896, lng: -87.665 };
+  // The map, centered at West Town in Chicago
+  const chicagoWestTownMap = new google.maps.Map(document.getElementById("map1"), {
     zoom: 12,
-    center: uluru1,
+    center: chicagoWestTown,
   });
-  // The marker, positioned at Uluru
+  // The marker, positioned at West Town in Chicago
   const marker1 = new google.maps.Marker({
-    position: uluru1,
-    map: map1,
+    position: chicagoWestTown,
+    map: chicagoWestTownMap,
   });
 
-  // The location of Uluru
-  const uluru2 = { lat: 43.039, lng: -87.927 };
-  // The map, centered at Uluru
-  const map2 = new google.maps.Map(document.getElementById("map2"), {
+  // The location of Marquette University
+  const marquette = { lat: 43.039, lng: -87.927 };
+  // The map, centered at Marquette in Milwaukee
+  const marquetteMap = new google.maps.Map(document.getElementById("map2"), {
     zoom: 12,
-    center: uluru2,
+    center: marquette,
   });
-  // The marker, positioned at Uluru
+  // The marker, positioned at Marquette University in Milwaukee
   const marker2 = new google.maps.Marker({
-    position: uluru2,
-    map: map2,
+    position: marquette,
+    map: marquetteMap,
   });
 
 }
